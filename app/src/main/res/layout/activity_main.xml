@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CALL DETAILS"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:textSize="@dimen/_14ssp"
+            android:textColor="@color/black"/>
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:background="@color/gray" />
+
+        <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvCallList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        </android.support.v7.widget.RecyclerView>
+
+
+      </LinearLayout>
+
+    </ScrollView>
+
+ </LinearLayout>
